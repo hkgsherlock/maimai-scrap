@@ -1,0 +1,18 @@
+{
+  "name": "maimai-scrap",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "souma",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "scripts": {
+    "start": "node scrap.js",
+    "start:test": "nodemon scrap.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}

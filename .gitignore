@@ -1,0 +1,5 @@
+/node_modules
+/chrome_userdata
+/firefox_userdata
+chromedriver.exe
+geckodriver.exe
