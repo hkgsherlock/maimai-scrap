@@ -8,7 +8,7 @@ const {
 } = require('selenium-webdriver');
 const ChromeDriver = require('selenium-webdriver/chrome');
 
-const scrapProfile = require('./scrapProfile.js');
+const scrapHome = require('./scrapHome.js');
 
 const options = new ChromeDriver.Options();
 options.addArguments(
@@ -36,7 +36,7 @@ options.addArguments(
 
         // const body = await driver.findElement(By.css('body'));
         // console.log(await body.getText());
-        console.log(await scrapProfile(driver));
+        console.log(await scrapHome(driver));
     } catch(e) {
         console.error("eew, ", e);
     } finally {
