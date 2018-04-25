@@ -68,6 +68,10 @@ async-each@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-each/-/async-each-1.0.1.tgz#19d386a1d9edc6e7c1c85d388aedbcc56d33602d"
 
+asyncmap@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/asyncmap/-/asyncmap-1.0.0.tgz#d404c59442e024aa13ca58dfdbe9b246882d7b14"
+
 atob@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.0.tgz#ab2b150e51d7b122b9efc8d7340c06b6c41076bc"

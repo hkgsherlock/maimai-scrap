@@ -6,11 +6,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "asyncmap": "^1.0.0",
     "selenium-webdriver": "^4.0.0-alpha.1"
   },
   "scripts": {
     "start": "node scrap.js",
-    "start:test": "nodemon scrap.js"
+    "start:test": "nodemon --exec node --inspect-brk scrap.js"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
