@@ -4,3 +4,4 @@
 /chromedriver.exe
 /geckodriver.exe
 /yarn-error.log
+.env

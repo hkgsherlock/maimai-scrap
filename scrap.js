@@ -8,6 +8,10 @@ const {
 } = require('selenium-webdriver');
 const ChromeDriver = require('selenium-webdriver/chrome');
 
+const dotenv = require('dotenv')
+
+dotenv.config()
+
 const scrapHome = require('./scrapHome.js');
 
 const options = new ChromeDriver.Options();
@@ -27,8 +31,8 @@ options.addArguments(
         await driver.get('https://maimai-net.com/maimai-mobile/home/');
 
         await driver.executeScript([
-    		`document.querySelector('form > input[name="segaId"]').value = "soumasandesu";`,
-    		`document.querySelector('form > input[name="passWd"]').value = "958746aA";`,
+    		`document.querySelector('form > input[name="segaId"]').value = "` + process.env.SEGAID_USER + `";`,
+    		`document.querySelector('form > input[name="passWd"]').value = "` + process.env.SEGAID_PASS + `";`,
     	].join(''));
 
         const form = await driver.findElement(By.css('form'));
